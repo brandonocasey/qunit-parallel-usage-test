@@ -1,0 +1,23 @@
+{
+  "name": "qunit-parallel-usage-test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scripts/gen-self-signed.js && node scripts/servers.js",
+    "test-node": "qunit src/define-tests.mjs",
+    "watch-node": "qunit src/define-tests.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fastify-http2https": "0.0.3",
+    "pino-pretty": "7.5.4",
+    "qunit": "2.18.0",
+    "fastify": "^3.27.4",
+    "fastify-auto-push": "^0.4.0",
+    "fastify-cors": "^6.0.3",
+    "selfsigned": "^2.0.0"
+  }
+}

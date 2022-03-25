@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/node_modules/qunit/qunit/qunit.css">
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="/node_modules/qunit/qunit/qunit.js"></script>
+    <script>
+      (function() {
+        QUnit.config.files.push('/src/define-tests.mjs');
+        QUnit.start();
+      })();
+    </script>
+  </body>
+</html>
